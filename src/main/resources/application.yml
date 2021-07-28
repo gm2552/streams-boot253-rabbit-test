@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    stream:         
+      function:
+        definition: dataConsumer
+      bindings:
+        dataConsumer-in-0:
+          destination: test-data-consumer
+          group: test-data-consumer-group
